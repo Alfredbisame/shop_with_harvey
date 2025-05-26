@@ -99,7 +99,7 @@ const products = [
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
-  const [selectedProduct, setSelectedProduct] = useState(null)
+  const [selectedProduct, setSelectedProduct] = useState<null | typeof products[0]>(null)
   const [favorites, setFavorites] = useState(new Set())
 
   const filteredProducts = products.filter((product) => {
@@ -110,7 +110,7 @@ export default function HomePage() {
     return matchesSearch && matchesCategory
   })
 
-  const toggleFavorite = (productId) => {
+  const toggleFavorite = (productId: number) => {
     const newFavorites = new Set(favorites)
     if (newFavorites.has(productId)) {
       newFavorites.delete(productId)

@@ -19,7 +19,7 @@ const allProducts = [
     name: "Elegant Evening Dress",
     category: "Dresses",
     price: 450.0,
-    image: "/placeholder.svg?height=300&width=250&text=Elegant+Evening+Dress",
+    image: "/s1.jpg",
     rating: 4.8,
     reviews: 124,
     description: "Stunning evening dress perfect for special occasions. Made with premium fabric and elegant design.",
@@ -30,7 +30,7 @@ const allProducts = [
     name: "Premium Cotton Fabric",
     category: "Fabrics",
     price: 125.5,
-    image: "/placeholder.svg?height=300&width=250&text=Premium+Cotton+Fabric",
+    image: "/s2.jpg",
     rating: 4.6,
     reviews: 89,
     description:
@@ -42,7 +42,7 @@ const allProducts = [
     name: "Designer Two-Piece Set",
     category: "Two Pieces",
     price: 650.0,
-    image: "/placeholder.svg?height=300&width=250&text=Designer+Two+Piece+Set",
+    image: "/s3.jpg",
     rating: 4.9,
     reviews: 156,
     description:
@@ -54,7 +54,7 @@ const allProducts = [
     name: "Luxury Handbag",
     category: "Bags",
     price: 999.99,
-    image: "/placeholder.svg?height=300&width=250&text=Luxury+Handbag",
+    image: "/s4.jpg",
     rating: 4.7,
     reviews: 203,
     description: "Premium leather handbag with spacious compartments and elegant design. Perfect for daily use.",
@@ -65,7 +65,7 @@ const allProducts = [
     name: "Comfortable Nightwear",
     category: "Nightwears",
     price: 230.0,
-    image: "/placeholder.svg?height=300&width=250&text=Comfortable+Nightwear",
+    image: "/s5.jpg",
     rating: 4.5,
     reviews: 78,
     description: "Soft and comfortable nightwear made from breathable fabric. Perfect for a good night's sleep.",
@@ -76,7 +76,7 @@ const allProducts = [
     name: "Stylish Sneakers",
     category: "Shoes",
     price: 400.0,
-    image: "/placeholder.svg?height=300&width=250&text=Stylish+Sneakers",
+    image: "/s6.jpg",
     rating: 4.8,
     reviews: 167,
     description: "Modern sneakers with superior comfort and style. Perfect for casual and athletic wear.",
@@ -87,7 +87,7 @@ const allProducts = [
     name: "Silk Blouse",
     category: "Tops",
     price: 180.0,
-    image: "/placeholder.svg?height=300&width=250&text=Silk+Blouse",
+    image: "/s7.jpg",
     rating: 4.7,
     reviews: 92,
     description: "Luxurious silk blouse with elegant draping. Perfect for professional and casual wear.",
@@ -98,7 +98,29 @@ const allProducts = [
     name: "Formal Shirt",
     category: "Shirts",
     price: 120.0,
-    image: "/placeholder.svg?height=300&width=250&text=Formal+Shirt",
+    image: "/s8.jpg",
+    rating: 4.4,
+    reviews: 65,
+    description: "Classic formal shirt with modern fit. Essential for professional wardrobe.",
+    inStock: true,
+  },
+  {
+    id: 9,
+    name: "Formal Shirt",
+    category: "Shirts",
+    price: 120.0,
+    image: "/s9.jpg",
+    rating: 4.4,
+    reviews: 65,
+    description: "Classic formal shirt with modern fit. Essential for professional wardrobe.",
+    inStock: true,
+  },
+  {
+    id: 10,
+    name: "Formal Shirt",
+    category: "Shirts",
+    price: 120.0,
+    image: "/s10.jpg",
     rating: 4.4,
     reviews: 65,
     description: "Classic formal shirt with modern fit. Essential for professional wardrobe.",
@@ -112,7 +134,8 @@ export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState(searchParams?.get("category") || "All")
   const [sortBy, setSortBy] = useState("name")
   const [viewMode, setViewMode] = useState("grid")
-  const [selectedProduct, setSelectedProduct] = useState(null)
+  type Product = typeof allProducts[number]
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
   const [favorites, setFavorites] = useState(new Set())
 
   const categories = [
@@ -151,7 +174,7 @@ export default function ProductsPage() {
     }
   })
 
-  const toggleFavorite = (productId) => {
+  const toggleFavorite = (productId: number) => {
     const newFavorites = new Set(favorites)
     if (newFavorites.has(productId)) {
       newFavorites.delete(productId)
@@ -160,7 +183,7 @@ export default function ProductsPage() {
     }
     setFavorites(newFavorites)
   }
-
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-blue-900 to-purple-900 dark:from-gray-900 dark:via-gray-800 dark:to-black">
       <Navigation />

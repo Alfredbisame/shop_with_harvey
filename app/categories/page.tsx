@@ -13,7 +13,7 @@ const categories = [
     icon: "🧵",
     count: 45,
     description: "Premium quality fabrics for all your tailoring needs",
-    image: "/placeholder.svg?height=300&width=400&text=Premium+Fabrics",
+    image: "/s1.jpg",
     subcategories: ["Cotton", "Silk", "Linen", "Wool", "Synthetic"],
   },
   {
@@ -21,7 +21,7 @@ const categories = [
     icon: "👗",
     count: 32,
     description: "Elegant dresses for every occasion and style",
-    image: "/placeholder.svg?height=300&width=400&text=Elegant+Dresses",
+    image: "/s2.jpg",
     subcategories: ["Evening", "Casual", "Formal", "Party", "Maxi"],
   },
   {
@@ -29,7 +29,7 @@ const categories = [
     icon: "👔",
     count: 28,
     description: "Coordinated sets for a polished, put-together look",
-    image: "/placeholder.svg?height=300&width=400&text=Two+Piece+Sets",
+    image: "/s3.jpg",
     subcategories: ["Crop Top Sets", "Blazer Sets", "Skirt Sets", "Pant Sets"],
   },
   {
@@ -37,7 +37,7 @@ const categories = [
     icon: "🩱",
     count: 24,
     description: "Comfortable and stylish intimate wear",
-    image: "/placeholder.svg?height=300&width=400&text=Lingerie+Collection",
+    image: "/s4.jpg",
     subcategories: ["Bras", "Panties", "Sets", "Shapewear", "Sleepwear"],
   },
   {
@@ -45,7 +45,7 @@ const categories = [
     icon: "🌙",
     count: 18,
     description: "Comfortable sleepwear for a good night's rest",
-    image: "/placeholder.svg?height=300&width=400&text=Comfortable+Nightwear",
+    image: "/s5.jpg",
     subcategories: ["Pajamas", "Nightgowns", "Robes", "Sleep Sets"],
   },
   {
@@ -53,7 +53,7 @@ const categories = [
     icon: "👕",
     count: 35,
     description: "Classic and modern shirts for every wardrobe",
-    image: "/placeholder.svg?height=300&width=400&text=Stylish+Shirts",
+    image: "/s6.jpg",
     subcategories: ["Casual", "Formal", "T-Shirts", "Polo", "Button-up"],
   },
   {
@@ -61,7 +61,7 @@ const categories = [
     icon: "👚",
     count: 42,
     description: "Trendy tops to complete your outfit",
-    image: "/placeholder.svg?height=300&width=400&text=Trendy+Tops",
+    image: "/s7.jpg",
     subcategories: ["Blouses", "Tank Tops", "Crop Tops", "Sweaters"],
   },
   {
@@ -69,7 +69,7 @@ const categories = [
     icon: "👜",
     count: 26,
     description: "Stylish bags for every occasion and need",
-    image: "/placeholder.svg?height=300&width=400&text=Designer+Bags",
+    image: "/s8.jpg",
     subcategories: ["Handbags", "Backpacks", "Clutches", "Totes", "Crossbody"],
   },
   {
@@ -77,7 +77,7 @@ const categories = [
     icon: "👠",
     count: 38,
     description: "Comfortable and fashionable footwear",
-    image: "/placeholder.svg?height=300&width=400&text=Fashion+Shoes",
+    image: "/s9.jpg",
     subcategories: ["Heels", "Flats", "Sneakers", "Boots", "Sandals"],
   },
   {
@@ -85,7 +85,7 @@ const categories = [
     icon: "🧴",
     count: 15,
     description: "Luxurious body care products for daily use",
-    image: "/placeholder.svg?height=300&width=400&text=Luxury+Shower+Gel",
+    image: "/s10.jpg",
     subcategories: ["Moisturizing", "Exfoliating", "Fragrant", "Organic"],
   },
 ]
