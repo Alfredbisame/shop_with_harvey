@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ShoppingBag, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import { ShoppingBag, Mail, Phone, MapPin } from "lucide-react"
+import {  FaXTwitter, FaFacebookF, FaPinterest, FaGoogle, FaYoutube, FaInstagram } from 'react-icons/fa6';
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -33,10 +34,10 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Youtube, href: "#", label: "YouTube" },
+    { icon: FaFacebookF, href: "#", label: "Facebook" },
+    { icon: FaXTwitter, href: "#", label: "Twitter" },
+    { icon: FaInstagram, href: "#", label: "Instagram" },
+    { icon: FaYoutube, href: "#", label: "YouTube" },
   ]
 
   return (
@@ -96,11 +97,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3 text-white/70">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+233 59 200 6905</span>
               </div>
               <div className="flex items-center space-x-3 text-white/70">
                 <MapPin className="h-5 w-5 text-indigo-400" />
-                <span>123 Fashion Street, Style City, SC 12345</span>
+                <span>123 Achimota Mall, Dome Road, Achimota, Greater Accra</span>
               </div>
             </div>
           </motion.div>

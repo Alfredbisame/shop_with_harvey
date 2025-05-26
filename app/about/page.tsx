@@ -39,27 +39,27 @@ const values = [
 
 const team = [
   {
-    name: "Harvey Johnson",
+    name: "Joyce Harvey",
     role: "Founder & CEO",
-    image: "/placeholder.svg?height=300&width=300&text=Harvey+Johnson",
+    image: "/s3.jpg",
     description: "Visionary leader with 10+ years in fashion retail",
   },
   {
     name: "Sarah Williams",
     role: "Head of Design",
-    image: "/placeholder.svg?height=300&width=300&text=Sarah+Williams",
+    image: "/s2.jpg",
     description: "Creative director with expertise in contemporary fashion",
   },
   {
-    name: "Michael Chen",
+    name: "Eng. Fred",
     role: "Operations Manager",
-    image: "/placeholder.svg?height=300&width=300&text=Michael+Chen",
+    image: "/fred.jpg",
     description: "Logistics expert ensuring smooth operations",
   },
   {
-    name: "Emma Davis",
+    name: "Kevin Davis",
     role: "Customer Experience",
-    image: "/placeholder.svg?height=300&width=300&text=Emma+Davis",
+    image: "/kevin.jpg",
     description: "Dedicated to providing exceptional customer service",
   },
 ]
@@ -129,7 +129,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Story</h2>
               <div className="space-y-4 text-white/80">
                 <p>
-                  Founded in 2019 by Harvey Johnson, Shop with Harvey began as a small boutique with a simple mission:
+                  Founded in 2019 by Joyce Harvey, Shop with Harvey began as a small boutique with a simple mission:
                   to provide high-quality fashion and lifestyle products that combine style, comfort, and affordability.
                 </p>
                 <p>
@@ -151,7 +151,7 @@ export default function AboutPage() {
               className="relative"
             >
               <img
-                src="/placeholder.svg?height=500&width=600&text=Our+Story"
+                src="/s2.jpg"
                 alt="Our Story"
                 className="w-full h-96 object-cover rounded-2xl"
               />
@@ -260,7 +260,7 @@ export default function AboutPage() {
                   everyone deserves to look and feel their best, and we're here to make that possible."
                 </p>
                 <div className="mt-6">
-                  <p className="text-white/70 font-medium">- Harvey Johnson, Founder & CEO</p>
+                  <p className="text-white/70 font-medium">- Joyce Harvey, Founder & CEO</p>
                 </div>
               </Card>
             </div>
