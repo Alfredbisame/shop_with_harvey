@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: "Shop with Harvey - Premium Fashion & Lifestyle",
   description:
     "Discover premium fashion, fabrics, and lifestyle products in our futuristic online store. Shop dresses, fabrics, two pieces, lingerie, nightwears, bags, shoes and more.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

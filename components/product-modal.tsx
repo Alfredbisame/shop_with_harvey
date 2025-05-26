@@ -104,7 +104,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-                      Fast and secure shipping
+                      Fast and secure delivery
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
