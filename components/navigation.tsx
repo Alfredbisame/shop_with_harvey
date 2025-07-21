@@ -88,7 +88,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/">
+          {/* <Link href="/">
             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2 cursor-pointer">
               <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-indigo-600 rounded-full flex items-center justify-center ">
                 <ShoppingBag className="h-6 w-6 text-white" />
@@ -97,7 +97,23 @@ export default function Navigation() {
                 Shop with Harvey
               </span>
             </motion.div>
-          </Link>
+          </Link> */}
+
+          {/* Logo */}
+        <Link href="/">
+          <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2 cursor-pointer">
+            <div className="w-10 h-10 sm:w-16 sm:h-24 rounded-full overflow-hidden flex items-center justify-center">
+              <img 
+                src="/harvey.png" 
+                alt="Harvey Logo" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <span className="text-sm md:text-xl ont-bold bg-gradient-to-r from-pink-400 to-indigo-400 bg-clip-text text-transparent">
+              Shop with Harvey
+            </span>
+          </motion.div>
+        </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
